@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[35]:
+# In[46]:
 
 
 import random
@@ -12,7 +12,7 @@ image = io.imread("https://zerode.files.wordpress.com/2010/09/432-sheldon-cooper
 defeat = io.imread("https://i.pinimg.com/originals/ec/cb/e2/eccbe21435c10a01b3ee01dd107762d9.jpg")
 
 
-# In[36]:
+# In[47]:
 
 
 def getPlayerChoice():
@@ -39,10 +39,11 @@ def getPlayerChoice():
             break
         else:
             print("Sheldon: One cries because one is sad. For example, I cry because others are stupid, and that makes me sad.")
+            print("")
     return choice
 
 
-# In[37]:
+# In[48]:
 
 
 def getCPUChoice():
@@ -60,7 +61,7 @@ def getCPUChoice():
     return choice
 
 
-# In[39]:
+# In[49]:
 
 
 flag = True
@@ -73,6 +74,7 @@ CPUChoice = 0
     
 play = input("Sheldon: Would you like to play Rock, Paper, Scissors, Lizard, Spock(y/n): ").lower()
 if play == "y" or play == "yes":
+        print("")
         print("1. Rock")
         print("2. Paper")
         print("3. Scissors")
@@ -82,9 +84,9 @@ if play == "y" or play == "yes":
         print("lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard,")
         print("lizard eats paper, paper disproves Spock, Spock vaporizes rock,") 
         print("and as it always has, rock crushes scissors.")
-        print("")
-    
+            
 elif play != "n":
+        print("")
         print("Sheldon: It's just yes or no, not rocket science. Let's just play")
         print("1. Rock")
         print("2. Paper")
@@ -102,6 +104,7 @@ while True:
         break
     
     else: 
+        print("")
         playerChoice = getPlayerChoice()
         playerChoice = int(playerChoice)
         CPUChoice = getCPUChoice()
